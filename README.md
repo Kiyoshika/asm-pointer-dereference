@@ -5,11 +5,16 @@ I wrote this in preparation for writing the `moca` compiler whenever I eventuall
 
 This should be equivalent to the following C code:
 ```c
+#include <stdint.h>
+#include <stdio.h>
+
 int main()
 {
-	int x = 5;
-	int* y = &x;
+	int64_t x = 5;
+	int64_t* y = &x;
 	*y = 10;
+	
+	printf("Value is: %d\n", x);
 
 	return 0;
 }
