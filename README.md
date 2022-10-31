@@ -14,7 +14,7 @@ int main()
 	int64_t* y = &x;
 	*y = 10;
 	
-	printf("Value is: %d\n", x);
+	printf("Value is: %ld\n", x);
 
 	return 0;
 }
